@@ -31,19 +31,10 @@ int main(){
         k++;
     }
 
-    int maxf = 0;
-    int maxel = -1;
-
-    int l = 0;
-    while(l <= mx){
-        if(freqarr[l] > maxf){
-            maxf = freqarr[l];
-            maxel = l;
-        }
-        l++;
-    }
-
-    cout << "the max freq element is: " << maxel  << " with frequency: " << maxf;
+    int nf;
+    cout << "enter no whose freq is to be found: ";
+    cin >> nf;
+    cout << "freq is: " << freqarr[nf];
 
     return 0;
 }
